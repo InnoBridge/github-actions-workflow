@@ -141,7 +141,7 @@ jobs:
         git add .
         git commit -m "Initialize Electron TypeScript project"
         git branch -M main
-        git remote add origin git@github.com:${{ github.actor }}/${{ github.event.inputs.repo_name }}.git
+        git remote add origin git@github.com:InnoBridge/${{ github.event.inputs.repo_name }}.git
         git remote set-url origin https://x-access-token:${{ env.GH_PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.actor }}/${{ github.event.inputs.repo_name }}
         git push -u origin main
       env:
